@@ -1,0 +1,358 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?application progid="SMath Studio Desktop" version="0.99.7822.147"?>
+<worksheet xmlns="http://smath.info/schemas/worksheet/1.0">
+  <settings ppi="96">
+    <identity>
+      <id>7f590a59-9348-4928-8539-f5b9ad98166e</id>
+      <revision>15</revision>
+    </identity>
+    <calculation>
+      <precision>4</precision>
+      <exponentialThreshold>5</exponentialThreshold>
+      <trailingZeros>false</trailingZeros>
+      <significantDigitsMode>false</significantDigitsMode>
+      <roundingMode>0</roundingMode>
+      <fractions>decimal</fractions>
+    </calculation>
+    <pageModel active="false" viewMode="2" printGrid="false" printAreas="true" simpleEqualsOnly="false" printBackgroundImages="true">
+      <paper id="9" orientation="Portrait" width="827" height="1169" />
+      <margins left="39" right="39" top="49" bottom="49" />
+      <header alignment="Center" color="#a9a9a9">&amp;[DATE] &amp;[TIME] - &amp;[FILENAME]</header>
+      <footer alignment="Center" color="#a9a9a9">&amp;[PAGENUM] / &amp;[COUNT]</footer>
+      <backgrounds />
+    </pageModel>
+    <dependencies>
+      <assembly name="SMath Studio Desktop" version="0.99.7822.147" guid="a37cba83-b69c-4c71-9992-55ff666763bd" />
+      <assembly name="MathRegion" version="1.11.7822.147" guid="02f1ab51-215b-466e-a74d-5d8b1cf85e8d" />
+      <assembly name="TextRegion" version="1.11.7822.147" guid="485d28c5-349a-48b6-93be-12a35a1c1e39" />
+    </dependencies>
+  </settings>
+  <regions type="content">
+    <region left="9" top="0" width="728" height="38" color="#000000" fontSize="10">
+      <text lang="por" fontFamily="Arial" fontSize="10">
+        <content>
+          <p style="background-color: #ffffff;">Determine alfa, L, P, S, FP e esforços nos tiristores considerando os parâmetros da tabela abaixo e valide os resultados através de sumulação.</p>
+        </content>
+      </text>
+    </region>
+    <region left="153" top="18" width="148" height="53" color="#000000" fontSize="10">
+      <text lang="por" fontFamily="Arial" fontSize="10">
+        <content>
+          <p style="background-color: #ffffff;">Iout=15A e ΔIout=20%<br /><br /></p>
+        </content>
+      </text>
+    </region>
+    <region left="45" top="45" width="94" height="23" color="#000000" fontSize="10">
+      <text lang="por" fontFamily="Courier New" fontSize="10">
+        <content>
+          <p>Carga RLE:</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="72" width="46" height="24" color="#000000" bgColor="#ffff00" fontSize="10">
+      <math decimalPlaces="6" exponentialThreshold="3">
+        <input>
+          <e type="operand">R</e>
+          <e type="operand">5</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="63" top="72" width="62" height="24" color="#000000" bgColor="#ffff00" fontSize="10">
+      <math decimalPlaces="6" exponentialThreshold="3">
+        <input>
+          <e type="operand">E</e>
+          <e type="operand">400</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="153" top="72" width="62" height="24" color="#000000" bgColor="#ffff00" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Io</e>
+          <e type="operand">15</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="99" width="54" height="24" color="#000000" bgColor="#ffff00" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">F</e>
+          <e type="operand">60</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="63" top="99" width="85" height="25" color="#000000" bgColor="#ffff00" fontSize="10">
+      <text lang="por" fontFamily="Arial" fontSize="10">
+        <content>
+          <p style="background-color: #ffff00;">\[REGION[72f3b73a8ba6496184202f5ca77df8b2]]\</p>
+        </content>
+        <regions>
+          <region id="72f3b73a8ba6496184202f5ca77df8b2" left="2" top="0" width="78" height="24" color="#000000" bgColor="#ffff00" fontSize="10">
+            <math>
+              <input>
+                <e type="operand">Vin</e>
+                <e type="operand">380</e>
+                <e type="operator" args="2">:</e>
+              </input>
+            </math>
+          </region>
+        </regions>
+      </text>
+    </region>
+    <region left="0" top="144" width="198" height="23" color="#000000" fontSize="10">
+      <text lang="por" fontFamily="Courier New" fontSize="10">
+        <content>
+          <p>Retificador controlado:</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="171" width="161" height="26" color="#000000" bgColor="#80ff00" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Vo</e>
+          <e type="operand">Io</e>
+          <e type="operand">R</e>
+          <e type="operator" args="2">*</e>
+          <e type="bracket">(</e>
+          <e type="operand">E</e>
+          <e type="operator" args="2">+</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">475</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="225" width="227" height="45" color="#000000" bgColor="#80ff00" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">α</e>
+          <e type="operand">Vo</e>
+          <e type="operand">π</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">3</e>
+          <e type="operand">2</e>
+          <e type="function" args="1">sqrt</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">Vin</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+          <e type="function" args="1">acos</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.3882</e>
+        </result>
+      </math>
+    </region>
+    <region left="234" top="225" width="25" height="25" color="#000000" fontSize="10">
+      <text lang="por" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>\[REGION[70169817a9484b458f24d756c7fb353c]]\</p>
+        </content>
+        <regions>
+          <region id="70169817a9484b458f24d756c7fb353c" left="2" top="0" width="18" height="24" color="#000000" fontSize="10">
+            <math optimize="2">
+              <input>
+                <e type="operand">#</e>
+              </input>
+            </math>
+          </region>
+        </regions>
+      </text>
+    </region>
+    <region left="0" top="279" width="241" height="43" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">alpa_graus</e>
+          <e type="operand">α</e>
+          <e type="operand">180</e>
+          <e type="operator" args="2">*</e>
+          <e type="bracket">(</e>
+          <e type="operand">π</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">22.2409</e>
+        </result>
+      </math>
+    </region>
+    <region left="333" top="288" width="154" height="23" color="#000000" fontSize="10">
+      <text lang="por" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>Soma + 30 ao alfa psim</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="333" width="256" height="45" color="#000000" bgColor="#80ff00" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">s</e>
+          <e type="operand">3</e>
+          <e type="function" args="1">sqrt</e>
+          <e type="operand">Vin</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">2</e>
+          <e type="operand">3</e>
+          <e type="operator" args="2">/</e>
+          <e type="function" args="1">sqrt</e>
+          <e type="operand">Io</e>
+          <e type="operator" args="2">*</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">8061.0173</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="387" width="143" height="26" color="#000000" bgColor="#80ff00" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">P</e>
+          <e type="operand">Vo</e>
+          <e type="operand">Io</e>
+          <e type="operator" args="2">*</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">7125</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="423" width="131" height="42" color="#000000" bgColor="#80ff00" fontSize="10">
+      <text lang="por" fontFamily="Arial" fontSize="10">
+        <content>
+          <p style="background-color: #80ff00;">\[REGION[52e8339671e94b56b07fc29dcce0ad75]]\</p>
+        </content>
+        <regions>
+          <region id="52e8339671e94b56b07fc29dcce0ad75" left="2" top="0" width="124" height="41" color="#000000" bgColor="#80ff00" fontSize="10">
+            <math>
+              <input>
+                <e type="operand">fp</e>
+                <e type="operand">P</e>
+                <e type="operand">s</e>
+                <e type="operator" args="2">/</e>
+                <e type="operator" args="2">:</e>
+              </input>
+              <result action="numeric">
+                <e type="operand">0.8839</e>
+              </result>
+            </math>
+          </region>
+        </regions>
+      </text>
+    </region>
+    <region left="0" top="477" width="215" height="26" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">V6</e>
+          <e type="operand">0.14</e>
+          <e type="operand">2</e>
+          <e type="function" args="1">sqrt</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">Vin</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">75.2362</e>
+        </result>
+      </math>
+    </region>
+    <region left="225" top="477" width="411" height="23" color="#000000" fontSize="10">
+      <text lang="por" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>Corrente de pico, estou usando. por isso I6 precisa ser divido por 2</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="504" width="153" height="43" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">I6</e>
+          <e type="operand">0.2</e>
+          <e type="operand">Io</e>
+          <e type="operator" args="2">*</e>
+          <e type="bracket">(</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">1.5</e>
+        </result>
+      </math>
+    </region>
+    <region left="216" top="522" width="294" height="38" color="#000000" fontSize="10">
+      <text lang="por" fontFamily="Courier New" fontSize="10">
+        <content>
+          <p>corrente de pico 6 harmônica. <br />ΔIo aproximadamente 2 vezes o pico.</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="549" width="140" height="41" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Z6</e>
+          <e type="operand">V6</e>
+          <e type="operand">I6</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">50.1574</e>
+        </result>
+      </math>
+    </region>
+    <region left="9" top="612" width="211" height="36" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">XL6</e>
+          <e type="function" args="1">det</e>
+          <e type="operand">Z6</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operand">R</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">-</e>
+          <e type="function" args="1">sqrt</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">49.9076</e>
+        </result>
+      </math>
+    </region>
+    <region left="9" top="666" width="184" height="45" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">L</e>
+          <e type="operand">Xl6</e>
+          <e type="function" args="1">det</e>
+          <e type="operand">6</e>
+          <e type="operand">2</e>
+          <e type="operand">π</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">60</e>
+          <e type="operator" args="2">*</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.0221</e>
+        </result>
+      </math>
+    </region>
+  </regions>
+</worksheet>
